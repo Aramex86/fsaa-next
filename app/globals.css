@@ -1,0 +1,20 @@
+/* FSAA starter demo page styles — minimal by design,
+   the boilerplate is about architecture, not looks. */
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #1e293b;
+  background: #fff;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+table {
+  margin-top: 8px;
+}
