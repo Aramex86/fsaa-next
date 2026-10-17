@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { SITE } from '@shared/config/site';
 import './globals.css';
 
 /* app/layout.tsx — FSAA app layer: global providers/config live here.
@@ -15,20 +16,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <header style={{ padding: '16px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', gap: 24 }}>
-          <strong>FSAA starter</strong>
-          <nav style={{ display: 'flex', gap: 16 }}>
-            <Link href="/projects">Projects</Link>
-            <Link href="/orders">Orders</Link>
-          </nav>
-          <a
-            href="https://github.com/Aramex86/fsaa"
-            style={{ marginLeft: 'auto', color: '#64748b' }}
-          >
-            methodology ↗
-          </a>
+        <header className="topbar">
+          <Link href="/" className="brand">
+            <svg viewBox="0 0 26 26" aria-hidden>
+              <rect x="3" y="3" width="20" height="5" rx="1.5" fill="#7ab8ff" />
+              <rect x="3" y="10.5" width="20" height="5" rx="1.5" fill="#43e0bd" />
+              <rect x="3" y="18" width="20" height="5" rx="1.5" fill="#e0c96a" />
+            </svg>
+            <span>
+              <b>{SITE.name} starter</b>
+              <small>Next.js App Router template</small>
+            </span>
+          </Link>
+          <div className="top-spacer" />
+          <div style={{ display: 'flex', gap: 8 }}>
+            <span className="pill live">FSAA layers enforced</span>
+            <a
+              href="https://github.com/Aramex86/fsaa"
+              target="_blank"
+              rel="noreferrer"
+              className="pill hide-sm"
+            >
+              methodology ↗
+            </a>
+          </div>
         </header>
-        <main style={{ padding: 24, maxWidth: 860 }}>{children}</main>
+        <div className="page">{children}</div>
       </body>
     </html>
   );
