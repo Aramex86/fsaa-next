@@ -2,6 +2,8 @@
 
 **FSAA is FSD + Atomic Design with an answer to the question both leave open: *where does UI go?***
 
+This is the official FSAA starter for **Next.js (App Router)**. Building a plain-React SPA (Vite) instead? Use the sibling template: [github.com/Aramex86/fsaa-vite](https://github.com/Aramex86/fsaa-vite) — same layers, same rules.
+
 This is the official FSAA starter: [Next.js 15 App Router] + React 19 + TypeScript, with FSAA layers, path aliases and **ESLint-enforced layer boundaries** — the architecture cannot erode, because wrong imports fail lint, not code review.
 
 > Methodology & decision rules: [github.com/Aramex86/fsaa](https://github.com/Aramex86/fsaa) · Live docs: [aramex86.github.io/fsaa](https://aramex86.github.io/fsaa/)
@@ -72,7 +74,7 @@ The table stays generic in `shared`; business-specific columns live in features.
 |---|---|---|
 | 0 | Repo, honest README, CONTRIBUTING | ✅ [Aramex86/fsaa](https://github.com/Aramex86/fsaa) |
 | 1 | Docs site | ✅ [aramex86.github.io/fsaa](https://aramex86.github.io/fsaa/) |
-| 2 | **This boilerplate** | 🚧 `in progress` |
+| 2 | **This boilerplate (Next.js)** + plain-React twin ([fsaa-vite](https://github.com/Aramex86/fsaa-vite)) | 🚧 this repo |
 | 3 | Architecture import checker (standalone), CI action | — |
 | 4 | Promotion, adoption feedback loop | — |
 
