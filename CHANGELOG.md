@@ -1,11 +1,9 @@
-## 0.2.0 — 2026-10-21
-
-### Added
-
-- `AGENTS.md` machine contract: npm command contracts, FSAA layer placement rules, import boundaries, PR-flow rule — every rule carries a `<!--check: id-->` marker verified by CI
-- `scripts/check-agents-md.mjs` (v4.2) — AGENTS.md drift-check: two-way binding (marker ⇄ check), real import-boundary scan (upward + cross-slice), UI fetch-free scan, colored per-rule report with timings (plain output in CI)
-- CI workflow `agents-md-drift-check` (`.github/workflows/agents-md.yml`): runs the drift-check on every PR and push
+## 0.3.0 — 2026-10-21
 
 ### Changed
 
-- Repository renamed `fsaa-react` → `fsaa-next` (old URL redirects)
+- Package manager contract: pnpm (single lockfile rule) — `package-lock.json` removed, `pnpm-lock.yaml` canonical, `"packageManager"` pinned
+
+### Added
+
+- drift-check v4.3: `single-lockfile` rule (11 contract rules total)

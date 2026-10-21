@@ -7,11 +7,18 @@ Every rule below carries a check marker and is verified by CI. If CI is red, fix
 
 ## Commands
 
-<!--check: cmd-npm-install -->  `npm install` — install dependencies
-<!--check: cmd-npm-dev -->      `npm run dev`
-<!--check: cmd-npm-lint -->     `npm run lint` — ESLint 9, zero errors allowed
-<!--check: cmd-npm-typecheck --> `npm run typecheck` — tsc, zero errors
-<!--check: cmd-npm-build -->    `npm run build` — must pass
+<!--check: cmd-pnpm-install -->  `pnpm install` — install dependencies
+<!--check: cmd-pnpm-dev -->      `pnpm dev`
+<!--check: cmd-pnpm-lint -->     `pnpm lint` — ESLint 9, zero errors allowed
+<!--check: cmd-pnpm-typecheck --> `pnpm typecheck` — tsc, zero errors
+<!--check: cmd-pnpm-build -->    `pnpm build` — must pass
+
+## Package manager
+
+<!--check: single-lockfile -->
+
+This repo uses pnpm ONLY. pnpm-lock.yaml is the single lockfile.
+A second lockfile (package-lock.json, yarn.lock) in the repo = CI red.
 
 ## Layers and where UI goes
 

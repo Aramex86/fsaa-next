@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * FSAA drift-check v4.2 — verifies that AGENTS.md (the machine contract)
+ * FSAA drift-check v4.3 — verifies that AGENTS.md (the machine contract)
  * still matches the real code. Cross-platform: pure Node, no shell tools.
  *
  * Two-way binding: unknown/unmapped rules are errors, missing markers are errors,
@@ -101,13 +101,17 @@ function boundaryHits() {
  * Return contract: true = pass, false = generic fail, string[] = offending files.
  */
 const checks = {
-  /** package-lock.json present — npm is the real package manager. */
-  "cmd-npm-install": () => existsSync("package-lock.json"),
-  "cmd-npm-dev": () => hasScript("dev"),
-  "cmd-npm-lint": () => hasScript("lint"),
-  "cmd-npm-typecheck": () => hasScript("typecheck"),
-  "cmd-npm-build": () => hasScript("build"),
-  /** All FSAA layer folders exist (app routes + features/entities/shared). */
+  /** Pnpm is the package manager: a healthy lockfile exists. */
+  "cmd-pnpm-install": () => existsSync("pnpm-lock.yaml"),
+  "cmd-pnpm-dev": () => hasScript("dev"),
+  "cmd-pnpm-lint": () => hasScript("lint"),
+  "cmd-pnpm-typecheck": () => hasScript("typecheck"),
+  "cmd-pnpm-build": () => hasScript("build"),
+  /** Exactly one lockfile in the repo: pnpm-lock.yaml. */
+  "single-lockfile": () =>
+    existsSync("pnpm-lock.yaml") &&
+    !existsSync("package-lock.json") &&
+    !existsSync("yarn.lock"),
   "ui-location": () =>
     [
       "app",
