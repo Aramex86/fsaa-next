@@ -1,5 +1,5 @@
-import type { Column } from '@shared/ui/molecules/table/DataTable';
-import type { Order } from '@entities/order';
+import type { Column } from "@shared/ui/molecules/table/DataTable";
+import type { Order } from "../../../entities/order";
 
 /* features/orders-overview/config/orderColumns — same pattern, second entity.
    NOTE: orderColumns are SIMILAR to projectColumns but deliberately separate.
@@ -8,21 +8,25 @@ import type { Order } from '@entities/order';
 
 export const orderColumns: Column<Order>[] = [
   {
-    header: 'Reference',
+    header: "Reference",
     render: (row) => <strong>{row.reference}</strong>,
   },
   {
-    header: 'Project',
+    header: "Project",
     render: (row) => row.projectName,
   },
   {
-    header: 'Amount',
-    align: 'right',
-    render: (row) => `$${row.amount.toLocaleString('en-US')}`,
+    header: "Amount",
+    align: "right",
+    render: (row) => `$${row.amount.toLocaleString("en-US")}`,
   },
   {
-    header: 'Status',
+    header: "Status",
     render: (row) =>
-      row.status === 'paid' ? '✅ paid' : row.status === 'pending' ? '⏳ pending' : '❌ cancelled',
+      row.status === "paid"
+        ? "✅ paid"
+        : row.status === "pending"
+          ? "⏳ pending"
+          : "❌ cancelled",
   },
 ];

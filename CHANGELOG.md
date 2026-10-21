@@ -1,13 +1,11 @@
-# Changelog — fsaa-react (Next.js template)
-
-All notable changes. Format: Keep a Changelog; versioning: SemVer.
-
-## 0.1.0 — 2026-10-17
+## 0.2.0 — 2026-10-21
 
 ### Added
-- FSAA layer structure: `src/app`, `src/pages` (Next.js App Router as pages layer), `src/features`, `src/entities`, `src/shared/ui` with path aliases (`@app/@pages/@features/@entities/@shared`)
-- ESLint flat config enforcing layer boundaries: imports flow down only, features never import each other (the graduation guarantee), `import/no-cycle`
-- Projects/Orders canonical example: generic `DataTable` molecule in shared, business columns in features, mocked entity data access
-- Dark UI theme mirroring the FSAA docs site: topbar with tri-bar brand, status pills, chiplists, zebra tables
-- Thin routes convention with documented mapping for layouts / loading / error / route groups / parallel slots
-- CI: typecheck + lint on every PR and every push to main
+
+- `AGENTS.md` machine contract: npm command contracts, FSAA layer placement rules, import boundaries, PR-flow rule — every rule carries a `<!--check: id-->` marker verified by CI
+- `scripts/check-agents-md.mjs` (v4.2) — AGENTS.md drift-check: two-way binding (marker ⇄ check), real import-boundary scan (upward + cross-slice), UI fetch-free scan, colored per-rule report with timings (plain output in CI)
+- CI workflow `agents-md-drift-check` (`.github/workflows/agents-md.yml`): runs the drift-check on every PR and push
+
+### Changed
+
+- Repository renamed `fsaa-react` → `fsaa-next` (old URL redirects)
