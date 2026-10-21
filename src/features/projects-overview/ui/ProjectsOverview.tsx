@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { DataTable } from '@shared/ui/molecules/table/DataTable';
-import { getProjects, type Project } from '@entities/project';
-import { projectColumns } from '../config/projectColumns';
+import { useEffect, useState } from "react";
+import { DataTable } from "@shared/ui/molecules/table/DataTable";
+import { getProjects, type Project } from "../../../entities/project";
+import { projectColumns } from "../config/projectColumns";
 
 /* features/projects-overview/ui/ProjectsOverview — the FEATURE owns the scenario:
    data (via entities), business columns, and composition of shared molecules. */

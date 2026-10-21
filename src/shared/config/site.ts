@@ -3,7 +3,7 @@
    imports; this re-export keeps app-layer imports honest.) */
 
 export const SITE = {
-  name: 'FSAA',
-  tagline: 'Feature-Sliced Atomic',
-  repoUrl: 'https://github.com/Aramex86/fsaa',
+  name: "FSAA",
+  tagline: "Feature-Sliced Atomic",
+  repoUrl: "https://github.com/Aramex86/fsaa",
 } as const;
