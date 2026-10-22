@@ -13,6 +13,8 @@ Every rule below carries a check marker and is verified by CI. If CI is red, fix
 <!--check: cmd-pnpm-typecheck --> `pnpm typecheck` — tsc, zero errors
 <!--check: cmd-pnpm-build -->    `pnpm build` — must pass
 
+Procedures for agents: agents/add-module.md, agents/add-pattern.md, agents/run-stack.md
+
 ## Package manager
 
 <!--check: single-lockfile -->
