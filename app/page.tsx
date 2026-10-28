@@ -48,7 +48,7 @@ export default function Home() {
       <p className="hint">
         Try violating a layer: import{" "}
         <code className="inline">@features/*</code> from another feature and run{" "}
-        <code className="inline">npm run lint</code> — red.
+        <code className="inline">pnpm lint</code> — red.
       </p>
     </section>
   );
