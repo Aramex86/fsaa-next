@@ -1,9 +1,9 @@
 {
   "name": "fsaa-next",
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@10.34.9",
   "version": "0.1.0",
   "private": true,
-  "description": "FSAA boilerplate — Next.js App Router + Feature-Sliced Atomic Architecture: features/entities/shared layers, thin routes, ESLint import enforcement",
+  "description": "FSAA boilerplate \u2014 Next.js App Router + Feature-Sliced Atomic Architecture: features/entities/shared layers, thin routes, ESLint import enforcement",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -28,5 +28,10 @@
     "eslint-plugin-import": "^2.32.0",
     "typescript": "^5",
     "vitest": "^3.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
