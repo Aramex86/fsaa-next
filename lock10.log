@@ -1,0 +1,34 @@
+npm notice run fsaa-next@0.1.0 npx
+npm notice run 'pnpm' install
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+Progress: resolved 24, reused 20, downloaded 2, added 0
+Progress: resolved 114, reused 50, downloaded 3, added 0
+Progress: resolved 194, reused 50, downloaded 3, added 0
+Progress: resolved 377, reused 72, downloaded 5, added 0
+Progress: resolved 452, reused 185, downloaded 5, added 0
+Progress: resolved 453, reused 292, downloaded 17, added 0
+ WARN  GET https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.5.28.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.3.4.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/@img/sharp-wasm32/-/sharp-wasm32-0.35.5.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/stable-hash/-/stable-hash-0.0.5.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.8.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/aria-query/-/aria-query-5.3.2.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/axobject-query/-/axobject-query-4.1.0.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/string.prototype.includes/-/string.prototype.includes-2.0.1.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/language-tags/-/language-tags-1.0.9.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/es-iterator-helpers/-/es-iterator-helpers-1.4.0.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/array.prototype.tosorted/-/array.prototype.tosorted-1.1.4.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+Progress: resolved 453, reused 292, downloaded 18, added 0
+Progress: resolved 453, reused 292, downloaded 40, added 0
+ WARN  GET https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.5.28.tgz error (ERR_PNPM_ENOSPC). Will retry in 1 minute. 1 retries left.
+ WARN  GET https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/iterator.prototype/-/iterator.prototype-1.1.5.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz error (ERR_PNPM_ENOSPC). Will retry in 10 secon

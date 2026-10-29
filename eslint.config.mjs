@@ -16,6 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import importPlugin from 'eslint-plugin-import';
+import fsaaPlugin from 'eslint-plugin-fsaa';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -128,6 +129,11 @@ const config = [
       ],
     },
   },
+  /* eslint-plugin-fsaa 0.1.1 — the same contract as npm lint rules.
+     Single source of truth: the npm package implements the checks; this
+     config wires fsaa/recommended in, so `pnpm lint` and drift-check share
+     one rule implementation. */
+  ...fsaaPlugin.configs.recommended,
 ];
 
 export default config;
