@@ -1,0 +1,39 @@
+npm notice run fsaa-next@0.1.0 npx
+npm notice run 'pnpm' install
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+Progress: resolved 62, reused 49, downloaded 0, added 0
+Progress: resolved 246, reused 153, downloaded 0, added 0
+Progress: resolved 412, reused 153, downloaded 0, added 0
+Progress: resolved 454, reused 250, downloaded 1, added 0
+Packages: +348
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 454, reused 332, downloaded 21, added 348, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+dependencies:
++ next 15.5.28 (16.4.3 is available)
++ react 19.3.1
++ react-dom 19.3.1
+
+devDependencies:
++ @eslint/eslintrc 3.3.7
++ @types/node 24.19.2 (26.6.5 is available)
++ @types/react 19.3.0
++ @types/react-dom 19.3.0
++ eslint 9.39.5 (10.13.0 is available) deprecated
++ eslint-config-next 15.5.28 (16.4.3 is available)
++ eslint-import-resolver-typescript 4.4.5
++ eslint-plugin-import 2.32.0
++ typescript 5.9.3 (7.0.2 is available)
++ vitest 3.2.7 (5.0.5 is available)
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: unrs-resolver@1.12.2.                               │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Done in 6s using pnpm v10.34.9
